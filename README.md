@@ -1,2 +1,2 @@
 # css-and-macros
-CSS and Excel scripts for our project
+Unofficial repo for prototyping style sheets and sharing scripts
