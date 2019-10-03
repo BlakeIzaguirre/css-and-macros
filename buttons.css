@@ -1,0 +1,30 @@
+/* Grey background, no offset, rounded corners
+Could be used as a secondary button
+
+Adjust the border radius property to round the corners*/
+
+.buttonsecondary {
+    background-color: darkgray;
+    color: black ;
+    border: 2px solid;
+    border-radius: 12px;
+    transition-delay: 0.4s;
+}
+/* Invert colors on hover*/
+
+.buttonsecondary:hover {
+    background-color: black;
+    color: darkgray;
+}
+
+/* Or add a shadow*/
+
+.buttonsecondary:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Fade in on hover, requires initial opacity set to something like 0.6*/
+
+.buttonsecondary:hover {
+    opacity: 1;
+}
