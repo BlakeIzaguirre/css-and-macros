@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
+.dp-form-header {
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
+
+
+.dp-form-body {
+    font-family: 'Arial', serif;
+    font-size: 15px;
+}
+
+.dp-form-button-primary {
+    color: transparent;
+    background: #a8c9e8 !important;
+    border-color: #82acd6 !important;
+    border-radius: 3px !important;
+    color:black !important;
+}
+
+.dp-form-button-primary:hover {
+    background: #82acd6 !important;
+}
+
+.dp-form-button-secondary {
+    color: transparent;
+    background: transparent !important;
+    border-color: #56696f !important;
+    border-radius: 3px !important;
+    color:black !important;
+}
+
+.dp-form-button-secondary:hover {
+    background: #6e7c7d !important;
+}
