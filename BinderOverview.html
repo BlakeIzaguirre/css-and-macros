@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Binding Overview</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      tr td:nth-child(even) {
+        background: #ccc;
+        color: black;
+      }
+      tr td:nth-child(odd) {
+        background: darkslategray;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1
+      style="text-align: center; background-color:darkslategray; color: white;"
+    >
+      Binding Overview
+    </h1>
+    <table class="table table-bordered table-hover">
+      <tbody>
+        <tr>
+          <td>Coverholder</td>
+          <td>$Coverholder</td>
+          <td>Platform</td>
+          <td>$Platform</td>
+          <td>Risk Codes</td>
+          <td>$Risk Codes</td>
+          <td>Contract Template Wording</td>
+          <td>$Contract Template</td>
+        </tr>
+        <tr>
+          <td>Contract UMR</td>
+          <td>$ContractUMR</td>
+          <td>Insurance Type</td>
+          <td>$InsuranceType</td>
+          <td>Risk Codes In Plan</td>
+          <td>$RiskCodesInPlan</td>
+          <td>Wordings to be Issued</td>
+          <td>$WordingstoIssue</td>
+        </tr>
+        <tr>
+          <td>New/Renewal</td>
+          <td>$NewOrRenewal</td>
+          <td>Proposed Currency</td>
+          <td>$ProposedCurrency</td>
+          <td>Coverholder Commission</td>
+          <td>$CvrhldrCommissionPct</td>
+          <td>Reporting Standards</td>
+          <td>$ReportingStandards</td>
+        </tr>
+        <tr>
+          <td>Slip Position</td>
+          <td>$SlipPosition</td>
+          <td>Proposed EPI (100% Gross)</td>
+          <td>$ProposedEPI100Gross</td>
+          <td>Brokerage</td>
+          <td>$Brokerage</td>
+          <td>Complaints Handling</td>
+          <td>$Complaints Handling</td>
+        </tr>
+        <tr>
+          <td>Underwriter</td>
+          <td>$Underwriter</td>
+          <td>Proposed EPI (WRB Share)</td>
+          <td>$ProposedEPIWRB</td>
+          <td>Profit Commission</td>
+          <td>$ProfitComission</td>
+          <td>Tax and Regulatory Issues</td>
+          <td>$TaxRegIssues</td>
+        </tr>
+        <tr>
+          <td>Class Of Business</td>
+          <td>$ClassOfBusiness</td>
+          <td>Proposed Limit (100%)</td>
+          <td>$ProposedLimit100</td>
+          <td>Claims Authority</td>
+          <td>$ClaimsAuthority</td>
+          <td>Master Binding Authority</td>
+          <td>$MasterBindingAuthority</td>
+        </tr>
+        <tr>
+          <td>Domicile</td>
+          <td>$Domicile</td>
+          <td>Proposed Written Line %</td>
+          <td>$ProposedWrittenLinePct</td>
+          <td>Authorized Claims Entity</td>
+          <td>$AuthorizedClaimsEntity</td>
+          <td>Internet Trading</td>
+          <td>$InternetTrading</td>
+        </tr>
+        <tr>
+          <td>Inception Date</td>
+          <td>$BinderInceptionDate</td>
+          <td>Proposed Signed Line %</td>
+          <td>$ProposedSignedLine%</td>
+          <td>TPA</td>
+          <td>$TPAName</td>
+          <td>ELTO</td>
+          <td>$ELTO</td>
+        </tr>
+        <tr>
+          <td>Expiry Date</td>
+          <td>$CurrentBinderExpiry</td>
+          <td>Estimated Loss Ratio %</td>
+          <td>$EstimatedLossRatio</td>
+          <td>Claims Limit of Authority</td>
+          <td>$ClaimsLimitOfAuthority</td>
+          <td>Sanctions Clause Included</td>
+          <td>$Has Sanctions Clause</td>
+        </tr>
+        <tr>
+          <td>Leader</td>
+          <td>$Leader</td>
+          <td>Product Classification</td>
+          <td>$ProductClassification</td>
+          <td>Risks Located In</td>
+          <td>$LocationOfRisks</td>
+          <td>Y4836 Compliant</td>
+          <td>$Y4836Compliant</td>
+        </tr>
+        <tr>
+          <td>Broker</td>
+          <td>$Broker</td>
+          <td>Product Rating</td>
+          <td>$ProductRating</td>
+          <td>Insureds Domiciled In</td>
+          <td>$InsuredsDomiciledIn</td>
+          <td>BAR Registration Number</td>
+          <td>$BARInfo</td>
+        </tr>
+        <tr>
+          <td>Underwriting Authority</td>
+          <td>$UnderwritingAuthority</td>
+          <td>Typical Insured</td>
+          <td>$TypicalInsured</td>
+          <td>Territorial Limits</td>
+          <td>$TerritorialLimits</td>
+          <td>YOA</td>
+          <td>$BinderYOA</td>
+        </tr>
+        <tr>
+          <td>Section</td>
+          <td>$Section</td>
+          <td>Policy Count</td>
+          <td>$PolicyCount</td>
+          <td>Maximum Risk Limits</td>
+          <td>$MaximumRiskLimits</td>
+          <td>Multi-Year</td>
+          <td>$MultiYear</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
