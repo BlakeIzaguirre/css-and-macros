@@ -34,6 +34,17 @@
         background: darkslategray;
         color: white;
       }
+      .LowerTableWrapper {
+        background-color: #ccc;
+        color: black;
+      }
+
+      .LowerTableWrapper .table td:first-child,
+      .LowerTableWrapper .table th:first-child {
+        width: 80%;
+        background-color: #ccc;
+        color: black;
+      }
     </style>
   </head>
 
@@ -43,139 +54,401 @@
     >
       Binding Overview
     </h1>
-    <table class="table table-bordered table-hover">
-      <tbody>
-        <tr>
-          <td>Coverholder</td>
-          <td>$Coverholder</td>
-          <td>Platform</td>
-          <td>$Platform</td>
-          <td>Risk Codes</td>
-          <td>$Risk Codes</td>
-          <td>Contract Template Wording</td>
-          <td>$Contract Template</td>
-        </tr>
-        <tr>
-          <td>Contract UMR</td>
-          <td>$ContractUMR</td>
-          <td>Insurance Type</td>
-          <td>$InsuranceType</td>
-          <td>Risk Codes In Plan</td>
-          <td>$RiskCodesInPlan</td>
-          <td>Wordings to be Issued</td>
-          <td>$WordingstoIssue</td>
-        </tr>
-        <tr>
-          <td>New/Renewal</td>
-          <td>$NewOrRenewal</td>
-          <td>Proposed Currency</td>
-          <td>$ProposedCurrency</td>
-          <td>Coverholder Commission</td>
-          <td>$CvrhldrCommissionPct</td>
-          <td>Reporting Standards</td>
-          <td>$ReportingStandards</td>
-        </tr>
-        <tr>
-          <td>Slip Position</td>
-          <td>$SlipPosition</td>
-          <td>Proposed EPI (100% Gross)</td>
-          <td>$ProposedEPI100Gross</td>
-          <td>Brokerage</td>
-          <td>$Brokerage</td>
-          <td>Complaints Handling</td>
-          <td>$Complaints Handling</td>
-        </tr>
-        <tr>
-          <td>Underwriter</td>
-          <td>$Underwriter</td>
-          <td>Proposed EPI (WRB Share)</td>
-          <td>$ProposedEPIWRB</td>
-          <td>Profit Commission</td>
-          <td>$ProfitComission</td>
-          <td>Tax and Regulatory Issues</td>
-          <td>$TaxRegIssues</td>
-        </tr>
-        <tr>
-          <td>Class Of Business</td>
-          <td>$ClassOfBusiness</td>
-          <td>Proposed Limit (100%)</td>
-          <td>$ProposedLimit100</td>
-          <td>Claims Authority</td>
-          <td>$ClaimsAuthority</td>
-          <td>Master Binding Authority</td>
-          <td>$MasterBindingAuthority</td>
-        </tr>
-        <tr>
-          <td>Domicile</td>
-          <td>$Domicile</td>
-          <td>Proposed Written Line %</td>
-          <td>$ProposedWrittenLinePct</td>
-          <td>Authorized Claims Entity</td>
-          <td>$AuthorizedClaimsEntity</td>
-          <td>Internet Trading</td>
-          <td>$InternetTrading</td>
-        </tr>
-        <tr>
-          <td>Inception Date</td>
-          <td>$BinderInceptionDate</td>
-          <td>Proposed Signed Line %</td>
-          <td>$ProposedSignedLine%</td>
-          <td>TPA</td>
-          <td>$TPAName</td>
-          <td>ELTO</td>
-          <td>$ELTO</td>
-        </tr>
-        <tr>
-          <td>Expiry Date</td>
-          <td>$CurrentBinderExpiry</td>
-          <td>Estimated Loss Ratio %</td>
-          <td>$EstimatedLossRatio</td>
-          <td>Claims Limit of Authority</td>
-          <td>$ClaimsLimitOfAuthority</td>
-          <td>Sanctions Clause Included</td>
-          <td>$Has Sanctions Clause</td>
-        </tr>
-        <tr>
-          <td>Leader</td>
-          <td>$Leader</td>
-          <td>Product Classification</td>
-          <td>$ProductClassification</td>
-          <td>Risks Located In</td>
-          <td>$LocationOfRisks</td>
-          <td>Y4836 Compliant</td>
-          <td>$Y4836Compliant</td>
-        </tr>
-        <tr>
-          <td>Broker</td>
-          <td>$Broker</td>
-          <td>Product Rating</td>
-          <td>$ProductRating</td>
-          <td>Insureds Domiciled In</td>
-          <td>$InsuredsDomiciledIn</td>
-          <td>BAR Registration Number</td>
-          <td>$BARInfo</td>
-        </tr>
-        <tr>
-          <td>Underwriting Authority</td>
-          <td>$UnderwritingAuthority</td>
-          <td>Typical Insured</td>
-          <td>$TypicalInsured</td>
-          <td>Territorial Limits</td>
-          <td>$TerritorialLimits</td>
-          <td>YOA</td>
-          <td>$BinderYOA</td>
-        </tr>
-        <tr>
-          <td>Section</td>
-          <td>$Section</td>
-          <td>Policy Count</td>
-          <td>$PolicyCount</td>
-          <td>Maximum Risk Limits</td>
-          <td>$MaximumRiskLimits</td>
-          <td>Multi-Year</td>
-          <td>$MultiYear</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="UpperTableWrapper">
+      <table class="table table-bordered table-hover">
+        <tbody>
+          <tr>
+            <td>Coverholder</td>
+            <td>$Coverholder</td>
+            <td>Platform</td>
+            <td>$Platform</td>
+            <td>Risk Codes</td>
+            <td>$RiskCodes</td>
+            <td>Contract Template Wording</td>
+            <td>$ContractTemplate</td>
+          </tr>
+          <tr>
+            <td>Contract UMR</td>
+            <td>$ContractUMR</td>
+            <td>Insurance Type</td>
+            <td>$InsuranceType</td>
+            <td>Risk Codes In Plan</td>
+            <td>$RiskCodesInPlan</td>
+            <td>Wordings to be Issued</td>
+            <td>$WordingstoIssue</td>
+          </tr>
+          <tr>
+            <td>New/Renewal</td>
+            <td>$NewOrRenewal</td>
+            <td>Proposed Currency</td>
+            <td>$ProposedCurrency</td>
+            <td>Coverholder Commission</td>
+            <td>$CvrhldrCommissionPct</td>
+            <td>Reporting Standards</td>
+            <td>$ReportingStandards</td>
+          </tr>
+          <tr>
+            <td>Slip Position</td>
+            <td>$SlipPosition</td>
+            <td>Proposed EPI (100% Gross)</td>
+            <td>$ProposedEPI100Gross</td>
+            <td>Brokerage</td>
+            <td>$Brokerage</td>
+            <td>Complaints Handling</td>
+            <td>$ComplaintsHandling</td>
+          </tr>
+          <tr>
+            <td>Underwriter</td>
+            <td>$Underwriter</td>
+            <td>Proposed EPI (WRB Share)</td>
+            <td>$ProposedEPIWRB</td>
+            <td>Profit Commission</td>
+            <td>$ProfitComission</td>
+            <td>Tax and Regulatory Issues</td>
+            <td>$TaxRegIssues</td>
+          </tr>
+          <tr>
+            <td>Class Of Business</td>
+            <td>$ClassOfBusiness</td>
+            <td>Proposed Limit (100%)</td>
+            <td>$ProposedLimit100</td>
+            <td>Claims Authority</td>
+            <td>$ClaimsAuthority</td>
+            <td>Master Binding Authority</td>
+            <td>$MasterBindingAuthority</td>
+          </tr>
+          <tr>
+            <td>Domicile</td>
+            <td>$Domicile</td>
+            <td>Proposed Written Line %</td>
+            <td>$ProposedWrittenLinePct</td>
+            <td>Authorized Claims Entity</td>
+            <td>$AuthorizedClaimsEntity</td>
+            <td>Internet Trading</td>
+            <td>$InternetTrading</td>
+          </tr>
+          <tr>
+            <td>Inception Date</td>
+            <td>$BinderInceptionDate</td>
+            <td>Proposed Signed Line %</td>
+            <td>$ProposedSignedLine%</td>
+            <td>TPA</td>
+            <td>$TPAName</td>
+            <td>ELTO</td>
+            <td>$ELTO</td>
+          </tr>
+          <tr>
+            <td>Expiry Date</td>
+            <td>$CurrentBinderExpiry</td>
+            <td>Estimated Loss Ratio %</td>
+            <td>$EstimatedLossRatio</td>
+            <td>Claims Limit of Authority</td>
+            <td>$ClaimsLimitOfAuthority</td>
+            <td>Sanctions Clause Included</td>
+            <td>$HasSanctionsClause</td>
+          </tr>
+          <tr>
+            <td>Leader</td>
+            <td>$Leader</td>
+            <td>Product Classification</td>
+            <td>$ProductClassification</td>
+            <td>Risks Located In</td>
+            <td>$LocationOfRisks</td>
+            <td>Y4836 Compliant</td>
+            <td>$Y4836Compliant</td>
+          </tr>
+          <tr>
+            <td>Broker</td>
+            <td>$Broker</td>
+            <td>Product Rating</td>
+            <td>$ProductRating</td>
+            <td>Insureds Domiciled In</td>
+            <td>$InsuredsDomiciledIn</td>
+            <td>BAR Registration Number</td>
+            <td>$BARInfo</td>
+          </tr>
+          <tr>
+            <td>Underwriting Authority</td>
+            <td>$UnderwritingAuthority</td>
+            <td>Typical Insured</td>
+            <td>$TypicalInsured</td>
+            <td>Territorial Limits</td>
+            <td>$TerritorialLimits</td>
+            <td>YOA</td>
+            <td>$BinderYOA</td>
+          </tr>
+          <tr>
+            <td>Section</td>
+            <td>$Section</td>
+            <td>Policy Count</td>
+            <td>$PolicyCount</td>
+            <td>Maximum Risk Limits</td>
+            <td>$MaximumRiskLimits</td>
+            <td>Multi-Year</td>
+            <td>$MultiYear</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="LowerTableWrapper">
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA Slip Review
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $SlipApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td>$SlipQuestion1</td>
+            <td>$SlipQ1RAG</td>
+          </tr>
+          <tr>
+            <td>$SlipQuestion2</td>
+            <td>$SlipQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$SlipQuestion3</td>
+            <td>$SlipQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$SlipComments</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA Due Diligence
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $DDApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr style="font-style: bold;">
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td style="background-color: #ccc;color: black;">$DDQuestion1</td>
+            <td>$DDQ1RAG</td>
+          </tr>
+          <tr>
+            <td class="LowerRow">$DDQuestion2</td>
+            <td>$DDQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$DDQuestion3</td>
+            <td>$DDQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$DDComments</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA Compliance
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $ComplianceApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr style="font-style: bold;">
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td style="background-color: #ccc;color: black;">$CompQuestion1</td>
+            <td>$CompQ1RAG</td>
+          </tr>
+          <tr>
+            <td class="LowerRow">$CompQuestion2</td>
+            <td>$CompQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$CompQuestion3</td>
+            <td>$CompQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$CompComments</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA Claims
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $ClaimsApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr style="font-style: bold;">
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td style="background-color: #ccc;color: black;">
+              $ClaimsQuestion1
+            </td>
+            <td>$ClaimsQ1RAG</td>
+          </tr>
+          <tr>
+            <td class="LowerRow">$ClaimsQuestion2</td>
+            <td>$ClaimsQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$ClaimsQuestion3</td>
+            <td>$ClaimsQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$ClaimsComments</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA POG
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $POGApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr style="font-style: bold;">
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td style="background-color: #ccc;color: black;">$POGQuestion1</td>
+            <td>$POGQ1RAG</td>
+          </tr>
+          <tr>
+            <td class="LowerRow">$POGQuestion2</td>
+            <td>$POGQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$POGQuestion3</td>
+            <td>$POGQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$POGComments</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA Bordereaux
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $BDXApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr style="font-style: bold;">
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td style="background-color: #ccc;color: black;">$BDXQuestion1</td>
+            <td>$BDXQ1RAG</td>
+          </tr>
+          <tr>
+            <td class="LowerRow">$BDXQuestion2</td>
+            <td>$BDXQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$BDXQuestion3</td>
+            <td>$BDXQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$BDXComments</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA Exposure
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $ExpoApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr style="font-style: bold;">
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td style="background-color: #ccc;color: black;">$ExpoQuestion1</td>
+            <td>$ExpoQ1RAG</td>
+          </tr>
+          <tr>
+            <td class="LowerRow">$ExpoQuestion2</td>
+            <td>$ExpoQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$ExpoQuestion3</td>
+            <td>$ExpoQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$ExpoComments</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered ApprovalChainTable">
+        <thead>
+          <th style="background-color: darkslategray;color: white;">
+            DUA Tech Services
+          </th>
+          <th style="background-color: darkslategray;color: white;">
+            $DDTechApproval
+          </th>
+        </thead>
+        <tbody>
+          <tr style="font-style: bold;">
+            <td>Questions Arising From Review</td>
+            <td>RAG</td>
+          </tr>
+          <tr>
+            <td style="background-color: #ccc;color: black;">$TechQuestion1</td>
+            <td>$TechQ1RAG</td>
+          </tr>
+          <tr>
+            <td class="LowerRow">$TechQuestion2</td>
+            <td>$TechQ2RAG</td>
+          </tr>
+          <tr>
+            <td>$TechQuestion3</td>
+            <td>$TechQ3RAG</td>
+          </tr>
+          <tr>
+            <td style="font-style:bold;">General Comments:</td>
+            <td>$TechComments</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
