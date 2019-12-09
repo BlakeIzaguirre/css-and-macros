@@ -1,0 +1,42 @@
+Coverholder
+UMR
+Binder Inception Date
+Expiry
+Underwriter
+Leader
+Broker
+Slip Position
+New Or Renewal
+COB
+Written Line %
+Signed Line %
+Currency
+EPI 100% Gross
+EPI WRB
+InsuranceType
+Risk Codes
+Risk Codes In Plan
+Platform
+Limit 100%
+Risks Located In
+Insureds Domiciled In
+Territorial Limits
+Section
+Underwriting Authority
+Claims Authority
+Authorized Claims Entity
+TPA Name 
+Claims Limit Of Authority
+Reporting Standards
+Policy Card
+Product Classification
+Product Rating 
+Typical Insured
+Complaints
+ELTO
+Internet Trading
+Tax Reg Issues
+Domicile
+Brokerage
+Coverholder Commission Percent
+Profit Commission
